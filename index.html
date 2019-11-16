@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .output {
+            width: 450px;
+            text-align: center;
+            font-size: 2em;
+        }
+        button {
+            padding: 10px;
+            text-align: center;
+            width: 450px;
+        }
+        .dicer {
+            border: 1px solid black;
+            width: 90px;
+            height: 103px;
+            padding: 2px;
+            border-radius: 10px;
+        }
+        .dot {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 2px;
+        }
+        .black {
+            background-color: black;
+        }
+        .white {
+            background-color: white;
+        }
+        .namer {
+            display: inline-block;
+            font-family: cursive;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .viewer {
+            display: inline-block;
+            height: 150px;
+            width: 211px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gameArea">
+        <div class="output"> <div> Roll the dice.. </div> </div>
+        <div class="viewer">
+            <span class="namer">
+                Player 1
+            </span>
+            <span id="player1"></span>
+        </div>
+        <div class="viewer">
+            <span class="namer">
+                Player 2
+            </span>
+            <span id="player2"></span>
+        </div>
+    </div>
+    <button type="button"> Roll </button>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
